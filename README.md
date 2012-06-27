@@ -38,6 +38,8 @@ Known Issues
 * When connecting and disconnecting a client, the server may generate a `java.net.SocketException: Broken pipe` or a `java.net.SocketException: Software caused connection abort: socket write error` error. These can be safely ignored.
 * There are known issues with Processing and Bluetooth virtual serial ports when running under Windows. If you're on a Windows machine, download and install [Bloom](http://sensormonkey.com/index.php/site/page?view=support.bloom) instead of running this sketch (whether you're using Bluetooth or not). Your sanity will thank you for it!
 * When terminating the sketch, use the **Stop** button on the Processing IDE rather than the Close button on the sketch's display window.
+* If you get a "WARNING: RXTX Version mismatch" error when running the sketch you can (in my experience) usually safely ignore it. However, if you want to update the serial library to avoid the error in the future, please see the [threads](http://forum.processing.org/search/rxtx) in the Processing forums.
+* If you're having trouble getting the sketch to run on Linux, the cause may be a bug in Processing that denies communication to the serial port because of the name it uses in the /dev/ folder. Please see the final post in [this](http://forum.processing.org/topic/error-message-about-serial-library-version) thread that describes how to solve this issue.
 
 More Information
 ----------------
